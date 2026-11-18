@@ -11,7 +11,26 @@ Before running the simulation, ensure you have the following installed:
 * **lcov** (Provides `genhtml` for coverage reports)
 * **Python 3** (For hosting the local coverage server)
 
-### UVM Setup
+### Install guide (for Linux only)
+For proper UVM support, **Verilator 5.0+** is highly recommended. 
+On modern Ubuntu/Debian systems, you can install Verilator and all other required dependencies (for coverage and waveforms) via `apt`:
+
+```bash
+sudo apt update
+sudo apt install verilator lcov gtkwave python3 git
+# It is possible that you need to install more dependencies for building and running environment
+```
+
+## UVM Setup
+Clone the official Accellera UVM repository (fetching the UVM 2020.2.1 release)
+```bash
+git clone --branch UVM_2020_2_1 [https://github.com/accellera-official/uvm.git](https://github.com/accellera-official/uvm.git) uvm-2020
+# Verify that the expected source file is in the right place
+ls -l ~/uvm/uvm-2020/src/uvm_pkg.sv
+# Set the UVM_HOME path (path to your UVM installation)
+export UVM_HOME=/custom/path/to/uvm/src
+```
+
 By default, the Makefile expects the UVM source code to be located at:
 `~/uvm/uvm-2020/src`
 
@@ -20,7 +39,7 @@ If your UVM installation is elsewhere, you **must** override the `UVM_HOME` vari
 export UVM_HOME=/path/to/your/uvm/src
 ```
 
-## Quick Start
+### Quick Start
 
 To build the Verilator executable and run the default sanity test in a single step, simply run:
 ```bash
