@@ -1,4 +1,4 @@
-# Bc. thesis UVM Verilator Simulation Environment
+# SV-RNM model and UVM Simulation Environment
 
 This repository contains a UVM-based testbench environment for comparator SV-RNM compiled and simulated using **Verilator**.
 
