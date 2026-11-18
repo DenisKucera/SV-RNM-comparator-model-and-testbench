@@ -25,8 +25,12 @@ sudo apt install verilator lcov gtkwave python3 git
 Clone the official Accellera UVM repository (fetching the UVM 2020.2.1 release)
 ```bash
 git clone --branch UVM_2020_2_1 [https://github.com/accellera-official/uvm.git](https://github.com/accellera-official/uvm.git) uvm-2020
+```
+```bash
 # Verify that the expected source file is in the right place
 ls -l ~/uvm/uvm-2020/src/uvm_pkg.sv
+```
+```bash
 # Set the UVM_HOME path (path to your UVM installation)
 export UVM_HOME=/custom/path/to/uvm/src
 ```
