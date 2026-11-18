@@ -3,7 +3,7 @@
  * File: tb_top.sv
  * Author: Denis Kucera
  * Created: 2026-05-12
- * Description: UVM testbench
+ * Description: UVM top-level instance
  */
 module tb_top(in, vss, vdd, inv_bias);
     output var real in;

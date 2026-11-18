@@ -1,3 +1,10 @@
+/*
+ * Project: RNM testbench
+ * File: comp_test_pkg.sv
+ * Author: Denis Kucera
+ * Created: 2026-05-30
+ * Description: test package
+ */
 package comp_test_pkg;
 
 `include "uvm_macros.svh"
