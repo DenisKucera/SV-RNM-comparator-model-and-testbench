@@ -13,3 +13,6 @@ UVM_training/
 
 # VS Code junk
 .vscode/.dvt/
+
+# Company IP - am_comparator
+RNM_testbench/src/ams/comparator.scs

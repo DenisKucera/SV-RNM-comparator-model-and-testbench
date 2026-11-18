@@ -1,0 +1,3 @@
+Comparator netlist couldn't be provided in this public repository!
+it is company IP and it is strictly forbidden to share it here!
+in case of interest i will add the AMS co-simulation results...
