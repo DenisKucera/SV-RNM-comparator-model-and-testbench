@@ -47,7 +47,7 @@ export UVM_HOME=/path/to/your/uvm/src
 
 To build the Verilator executable and run the default sanity test in a single step, simply run:
 ```bash
-make
+make all
 # This executes the default 'all' target (build + run)
 ```
 If you prefer to run the flow step-by-step, you can use the individual targets:

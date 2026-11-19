@@ -16,3 +16,8 @@ UVM_training/
 
 # Company IP - am_comparator
 RNM_testbench/src/ams/comparator.scs
+
+.dvt/.build_config_dict
+dvt_build.log
+.dvt/default.ls
+.dvt/default.build.auto.1
